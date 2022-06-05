@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;1,100;1,200&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC:wght@700&family=Teko&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#a1e560">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Aged Pages</title>
+</head>
+<body>
+	<a href="index.html"><img id="icon" src="images/other/logo.png" style="width:100%;"></a>
+<!-- Menu -->
+<div class="dropdown">
+	<i class="fas fa-bars dropbtn" onclick="myFunction()" style="font-size: 22px;"></i>
+	<div id="myDropdown" class="dropdown-content">
+		<a href="index.html">Home</a>
+		<a href="books.html">Boeken</a>
+		<a href="about.html">Over</a>
+	</div>
+</div>
+<!-- Socials -->
+<div class="socialmedia">
+	<a href="https://www.facebook.com/Aged-Pages-101645485849894/" class="fa fa-facebook">&nbspFacebook&nbsp&nbsp</a>
+	<a href="https://www.instagram.com/aged_pages/" class="fa fa-instagram">&nbspInstagram&nbsp&nbsp</a>
+	<a href="https://twitter.com/AgedPages" class="fa fa-twitter">&nbspTwitter</a>
+</div>
+<!-- Winkelwagen -->
+<div class="quantityDiv">
+	<span id="simpleCart_quantity" class="simpleCart_quantity"></span>
+</div>
+<div id="overlay"></div>
+<i class="fa fa-shopping-cart" onclick="openNav()" onclick="closeOffCanvas()" style="font-size: 22px;"></i>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <br />
+  <div class="simpleCart_items" >
+	</div>
+	<div class="totalWrapper">
+	Subtotaal: <span id="simpleCart_total" class="simpleCart_total"></span> <br />
+	Verzending: <span id="simpleCart_shipping" class="simpleCart_shipping"></span> <br />
+	_________________________<br />
+	Totaal: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span> <br />
+	</div>
+	<a href="javascript:;" class="simpleCart_checkout">Afrekenen</a>	
+</div>
+<!-- Searchbar -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<!-- Infobar -->
+<div class="infobarDesktop">Verzending door heel Nederland! &nbsp&nbsp|&nbsp&nbsp Gratis verzending vanaf €50,-  &nbsp&nbsp|&nbsp&nbsp Onder de €50,- verzendkosten €4,50</div>
+<div class="infobarMobile">Gratis verzending vanaf €50,- anders €4,50 verzendkosten</div>
+<!-- Slider -->
+<div id="exampleSlider">
+       <div class="MS-content">
+           <div class="item">
+               <img src="images/other/banner1.png" style="width:100%;">
+           </div>
+           <div class="item">
+               <img src="images/other/banner2.png" style="width:100%;">
+           </div>
+           <div class="item">
+               <img src="images/other/banner1.png" style="width:100%;">
+           </div>
+           <div class="item">
+               <img src="images/other/banner2.png" style="width:100%;">
+           </div>
+           <div class="item">
+               <img src="images/other/banner1.png" style="width:100%;">
+           </div>
+           <div class="item">
+               <img src="images/other/banner2.png" style="width:100%;">
+           </div>
+       </div>
+   </div>
+<!-- Boeken -->
+<section>
+  <h3 class="popular">Populaire Boeken</h3>
+	<div class="wrapper">
+<!-- Product -->
+		<div class="box1">
+			<a href="ap-namennoemen.html">
+				<img src="images/AP-Namennoemenx400.jpg" style="width:100%; border-radius: 5px 5px;" class="image">
+			</a>
+		</div>
+	<!-- Add to Cart -->
+	<div class="simpleCart_shelfItem">
+		<h2 class="item_name">Anna Pavord - <br>Namen Noemen</h2>
+	    <span class="item_price">€0.1-</span>
+		<a class="item_add" href="javascript:;"><i class='fas fa-cart-plus'></i></a>
+	</div>
+<!-- Product -->
+		<div class="box2">
+			<a href="nm-thegodwhobegatajackal.html">
+				<img src="images/NM-Thegodwhobegatajackalx400.jpg" style="width:100%; border-radius: 5px 5px;" class="image">
+			</a>
+		</div>
+	<!-- Add to Cart -->
+	<div class="simpleCart_shelfItem">
+		<h2 class="item_name">Nega Mezlekia - <br>The God who Begat a Jackal</h2>
+	    <span class="item_price">€40.-</span>
+		<a class="item_add" href="javascript:;"><i class='fas fa-cart-plus'></i></a>
+	</div>
+<!-- Product -->
+		<div class="box3">
+			<a href="mk-aardschok.html">
+				<img src="images/MK-Aardschokx400.jpg" style="width:100%; border-radius: 5px 5px;" class="image">
+			</a>
+		</div>
+	<!-- Add to Cart -->
+	<div class="simpleCart_shelfItem">
+		<h2 class="item_name">Mons Kallentoft - <br>Aardschok</h2>
+	    <span class="item_price">€7.-</span>
+		<a class="item_add" href="javascript:;"><i class='fas fa-cart-plus'></i></a>
+	</div>
+<!-- Product -->
+		<div class="box4">
+			<a href="ss-prettylittleliars.html">
+				<img src="images/SS-Prettylittleliarsx400.jpg" style="width:100%; border-radius: 5px 5px;" class="image">
+			</a>
+		</div>
+	<!-- Add to Cart -->
+	<div class="simpleCart_shelfItem fourthProd">
+		<h2 class="item_name">Sarah Shepard - <br>Pretty Little Liars Box Set 1-4</h2>
+	    <span class="item_price fourthPrice">€16.-</span>
+		<a class="item_add" href="javascript:;"><i class='fas fa-cart-plus'></i></a>
+	</div>
+<!-- Product -->
+		<div class="box5">
+			<a href="hgw-waroftheworlds.html">
+				<img src="images/HGW-Waroftheworldsx400.jpg" style="width:100%; border-radius: 5px 5px;" class="image">
+			</a>
+		</div>
+	<!-- Add to Cart -->
+	<div class="simpleCart_shelfItem fifthProd">
+		<h2 class="item_name">H. G. Wells - <br>War of the Worlds</h2>
+	    <span class="item_price fifthPrice">€2.-</span>
+		<a class="item_add" href="javascript:;"><i class='fas fa-cart-plus'></i></a>
+	</div>
+</section>
+<!-- Posts -->
+<div class="sectionPosts">
+	<div class="row firstRow">
+		<div class="posts first">
+			<h5>Boeken bij Aged Pages</h5>
+			<div style="margin-right: 10px;">Tijd om wat nieuwe titels toe te voegen aan je collectie? Of ben je deze zomer misschien opzoek naar een paar goede verhalen perfect voor aan het strand of zwembad?<br>
+			Thrillers, romances, non-fictie en fictie, Nederlands of Engelstalig, bij Aged pages is er voor elk wat wils!
+			</div>
+		</div>
+	</div>
+	<div class="row secondRow">
+		<div class="posts second">
+			<h5>Boek van de Week</h5>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="footerLinks" style="margin-left: 40px;">
+		<a href="index.html">Home</a>
+		<a href="books.html">Boeken</a>
+		<a href="about.html">Over</a>
+		<div style="font-size:12px;margin-top: 8px;">
+			<a href="https://www.facebook.com/Aged-Pages-101645485849894/" class="fa fa-facebook">&nbspFacebook&nbsp&nbsp</a>
+			<a href="https://www.instagram.com/aged_pages/" class="fa fa-instagram">&nbspInstagram&nbsp&nbsp</a>
+			<a href="https://twitter.com/AgedPages" class="fa fa-twitter">&nbspTwitter&nbsp&nbsp</a>
+			<a href="mailto:agedpages@outlook.com" class="fa fa-envelope">&nbspagedpages@outlook.com</a>
+		</div>
+	</div>
+	<div class="paymentOptions">
+		<i class="fa fa-cc-paypal"></i>
+	</div>
+</footer>
+	<script src="js/simpleCart.js"></script>
+	<script>
+		simpleCart({
+			checkout: { 
+				type: "PayPal" , 
+				email: "agedpages@outlook.com" 
+			},
+		currency: 	"EUR"
+		});	
+	</script>
+	<script src="script.js"></script>
+	<script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/multislider.js"></script>
+	<script>$('#exampleSlider').multislider({interval: 4000,continuous: true, duration: 11500});</script>
+</body>
+</html>

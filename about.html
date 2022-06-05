@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;1,100;1,200&family=Open+Sans+Condensed:wght@300&family=Playfair+Display+SC:wght@700&family=Teko&display=swap" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#a1e560">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>Aged Pages</title>
+</head>
+<body>
+    <a href="index.html"><img id="icon" src="images/other/logo.png" style="width:100%;"></a>
+<!-- Menu -->
+<div class="dropdown">
+	<i class="fas fa-bars dropbtn" onclick="myFunction()" style="font-size: 22px;"></i>
+	<div id="myDropdown" class="dropdown-content">
+		<a href="index.html">Home</a>
+		<a href="books.html">Boeken</a>
+		<a href="about.html">Over</a>
+	</div>
+</div>
+<!-- Socials -->
+<div class="socialmedia">
+	<a href="https://www.facebook.com/Aged-Pages-101645485849894/" class="fa fa-facebook">&nbspFacebook&nbsp&nbsp</a>
+	<a href="https://www.instagram.com/aged_pages/" class="fa fa-instagram">&nbspInstagram&nbsp&nbsp</a>
+	<a href="https://twitter.com/AgedPages" class="fa fa-twitter">&nbspTwitter</a>
+</div>
+<!-- Winkelwagen -->
+<div class="quantityDiv">
+	<span id="simpleCart_quantity" class="simpleCart_quantity"></span>
+</div>
+<div id="overlay"></div>
+<i class="fa fa-shopping-cart" onclick="openNav()" onclick="closeOffCanvas()" style="font-size: 22px;"></i>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <br />
+  <div class="simpleCart_items" >
+	</div>
+	Subtotaal: <span id="simpleCart_total" class="simpleCart_total"></span> <br />
+	Verzending: <span id="simpleCart_shipping" class="simpleCart_shipping"></span> <br />
+	_________________________<br />
+	Totaal: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span> <br />
+
+	<a href="checkoutform.html">Afrekenen</a>	
+</div>
+<!-- Searchbar -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<!-- Infobar -->
+<div class="infobarDesktop">Verzending door heel Nederland! &nbsp&nbsp|&nbsp&nbsp Gratis verzending vanaf €50,-  &nbsp&nbsp|&nbsp&nbsp Onder de €50,- verzendkosten €4,50</div>
+<div class="infobarMobile">Gratis verzending vanaf €50,- anders €4,50 verzendkosten</div><br>
+<!-- About -->
+	<div class="aboutWrapper">
+	Aged Pages is oorspronkelijk ontstaan door een <span style="font-family: 'Teko', sans-serif;font-size: 28px;">voorliefde voor boeken</span> en de wens deze voorliefde met andere te delen. Echter, kwam het concept pas echt tot bloei toen we besefte hoe belangrijk Aged Pages kon zijn voor de <span style="font-family: 'Teko', sans-serif;font-size: 28px;">hedendaagse waarden</span> waar mensen zich sterk voor maken.<br><br>
+We willen af van gedachteloos consumeren, en <span style="font-family: 'Teko', sans-serif;font-size: 28px;">duurzamer</span> gaan leven. Een boek oppakken en simpelweg <span style="font-family: 'Teko', sans-serif;font-size: 28px;">genieten</span>  van het verhaal en ons niet schuldig hoeven voelen over of het nou echt nodig was om met een gloednieuwe druk in ons handen te zitten, zelfs al is de geur nog zo heerlijk.<br><br>
+We zijn graag <span style="font-family: 'Teko', sans-serif;font-size: 28px;">milieubewust</span>  bezig, en als we elk voor een paar minder gedrukte boeken kunnen zorgen en een gloednieuwe aankoop voor de echte <span style="font-family: 'Teko', sans-serif;font-size: 28px;">favorieten bewaren</span> , dan kunnen we ongetwijfeld ook in de verbetering van het milieu onze <span style="font-family: 'Teko', sans-serif;font-size: 28px;">bijdragen</span>  leveren.<br><br>
+We willen dat boeken <span style="font-family: 'Teko', sans-serif;font-size: 28px;">voor iedereen toegankelijk</span>  zijn en ook voor een <span style="font-family: 'Teko', sans-serif;font-size: 28px;">schappelijke prijs</span>  te vinden zijn. De verwondering  die we bij het lezen van boeken voelen, zelfs al zijn de pagina's wat verouderd of verkleurd, dat gevoel moet <span style="font-family: 'Teko', sans-serif;font-size: 28px;">voor iedereen mogelijk</span>  zijn!
+  </div>
+<!-- Posts -->
+<div class="sectionPosts">
+	<div class="row firstRow">
+		<div class="posts first">
+			<h5>Boeken bij Aged Pages</h5>
+			<div style="margin-right: 10px;">Tijd om wat nieuwe titels toe te voegen aan je collectie? Of ben je deze zomer misschien opzoek naar een paar goede verhalen perfect voor aan het strand of zwembad?<br>
+			Thrillers, romances, non-fictie en fictie, Nederlands of Engelstalig, bij Aged pages is er voor elk wat wils!
+			</div>
+		</div>
+	</div>
+	<div class="row secondRow">
+		<div class="posts second">
+			<h5>Boek van de Week</h5>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+		<div class="footerLinks" style="margin-left: 40px;">
+		<a href="index.html">Home</a>
+		<a href="books.html">Boeken</a>
+		<a href="about.html">Over</a>
+		<div style="font-size:12px;margin-top: 8px;">
+			<a href="https://www.facebook.com/Aged-Pages-101645485849894/" class="fa fa-facebook">&nbspFacebook&nbsp&nbsp</a>
+			<a href="https://www.instagram.com/aged_pages/" class="fa fa-instagram">&nbspInstagram&nbsp&nbsp</a>
+			<a href="https://twitter.com/AgedPages" class="fa fa-twitter">&nbspTwitter&nbsp&nbsp</a>
+			<a href="mailto:agedpages@outlook.com" class="fa fa-envelope">&nbspagedpages@outlook.com</a>
+		</div>
+	</div>
+	<div class="paymentOptions">
+		<i class="fa fa-cc-paypal"></i>
+	</div>
+</footer>
+	<script src="js/simpleCart.js"></script>
+	<script>
+		simpleCart({
+			checkout: { 
+				type: "PayPal" , 
+				email: "you@yours.com" 
+			},
+		currency: 	"EUR"
+		});	
+	</script>
+	<script src="script.js"></script>
+	<script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/multislider.js"></script>
+	<script>$('#exampleSlider').multislider({interval: 4000,continuous: true, duration: 11500});</script>
+</body>
+</html>
