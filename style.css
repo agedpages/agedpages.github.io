@@ -202,7 +202,7 @@ body {
   transition: 0.3s;
 }
 .sidenav a:hover {
-  color: #446C2E;
+  color: #2e2e2e;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -229,11 +229,12 @@ body {
 .simpleCart_checkout {
     background-color: #A1E560;
     font-family: 'Teko', sans-serif;
-    margin-left: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
     margin-right: 50px;
 }
-.simpleCart_checkout;hover {
-    color: #446C2E;
+.simpleCart_checkout:hover {
+    background-color: #63AD1C;
 }
 .simpleCart_total {
     margin-right: 60px;
@@ -322,6 +323,11 @@ body {
 .checked {
   color: #63AD1C;
 }
+.navSocials a{
+    font-size: 12px;
+    line-height: 0px;
+}
+
 @media only screen and (min-width : 280px) and (max-width: 320px) {.item_add .fa-cart-plus{display: none;}.item_price{display: none}.fa-shopping-cart{margin-top: -30px;margin-right: 2px;}.quantityDiv{margin-top: -40px}.simpleCart_quantity{padding: 1.8px 6.5px 1.8px 6.5px;}}
 @media only screen and (min-width : 320px) and (max-width: 360px) {.item_add .fa-cart-plus{display: none;}.item_price{display: none}.fa-shopping-cart{margin-top: -30px;margin-right: 2px;}.quantityDiv{margin-top: -40px}.simpleCart_quantity{padding: 1.8px 6.5px 1.8px 6.5px;}}
 @media only screen and (min-width : 361px) and (max-width: 401px) {.item_add .fa-cart-plus{display: none;}.item_price{display: none}.fa-shopping-cart{margin-top: -30px;margin-right: 2px;}.quantityDiv{margin-top: -40px}.simpleCart_quantity{padding: 1.8px 6.5px 1.8px 6.5px;}}
