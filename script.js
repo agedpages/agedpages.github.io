@@ -31,6 +31,11 @@ function closeNav() {
   document.getElementById("overlay").style.display = "none";
 }
 
+/* Close the side navigation and the overlay when the user taps on the overlay */
+document.getElementById("overlay").addEventListener("click", function() {
+  closeNav();
+});
+
 /* ------ filter books -------*/
 
 for (let i of products.data) {
